@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительство</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+<body class="m-0 font-Manrope bg-[#DBDDDA]">
+    <!-- Menu -->
+    <nav id="menu" class="fixed transform duration-1000 ease-in-out w-full h-screen bg-neutral-300 top-[-100vh] z-[13]">
+        <div class="md:mx-[40px] lg:mx-auto">
+            <!-- close menu button -->
+            <button id="close-menu" class="fixed right-[20px] md:right-[40px] md:top-[20px] py-4 md:mx-[40px] lg:mx-auto transform ease-in-out duration-300 hover:translate-y-[-6px]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-neutral-800 w-12 md:w-14 md:mx-[20px]">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" />
+                </svg>              
+            </button>                
+        </div>
+
+        <ul class="flex flex-col items-end mt-[40%] md:mt-[200px] mr-[5%] text-neutral-800">
+            <li>
+                <a href="home.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Домашняя</i></a>
+            </li>
+            <li>
+                <a href="catalog.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Каталог</i></a>
+            </li>
+            <li>
+                <a href="contacts.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Контакты</i></a>
+            </li>
+            <li>
+                <a href="landing.html" class="ref text-[42px] md:text-[76px] text-neutral-400 transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-400 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Мастерская</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- logo -->
+    <svg class="text-neutral-800 fixed top-[20px] z-[1000] md:w-20 w-12 mx-[20px] md:ml-[50vw]" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100.573 0.378947C91.1004 1.38907 79.6927 4.33863 69.7361 8.37912C51.0727 15.9348 33.3766 30.0362 21.0821 47.2082C7.53795 66.0773 0 89.6738 0 113.068C0 151.008 18.986 186.403 50.5889 207.373C64.6168 216.707 76.7904 221.555 94.5267 224.869C100.331 225.919 101.097 226 113.069 226C125.041 226 125.848 225.919 131.813 224.828C156.201 220.384 176.557 209.798 193.367 192.787C218.036 167.817 229.363 134.281 225.131 98.5225C222.108 72.6633 209.007 47.3295 189.457 29.5513C171.317 13.0257 149.348 3.04567 125.283 0.378947C120.809 -0.146316 105.37 -0.105911 100.573 0.378947ZM128.589 2.35879C149.066 5.42956 167.125 13.3085 183.41 26.3593C188.328 30.2786 197.841 40.1778 201.751 45.39C211.99 59.0065 218.198 72.5017 221.866 88.9465C223.76 97.5124 224.325 102.967 224.325 113.27C224.325 123.493 223.801 128.584 221.906 137.109C217.149 158.564 207.354 176.383 191.674 192.1C174.542 209.272 154.75 219.333 129.395 223.657C125.928 224.263 122.905 224.384 112.868 224.384C99.3639 224.343 95.7763 223.939 85.457 221.313C59.6587 214.646 37.0851 199.01 21.7673 177.11C-1.33023 144.14 -4.83719 100.664 12.7379 64.3803C26.2014 36.5817 51.1533 15.1267 80.4183 6.19726C85.6182 4.62146 93.519 2.88405 97.9531 2.39919C100.049 2.15676 102.347 1.87393 102.992 1.79312C105.37 1.46988 125.646 1.91433 128.589 2.35879Z" fill="black"/>
+        <path d="M87.5129 51.3295C86.5454 53.5922 85.1346 56.865 84.409 58.562C83.6431 60.259 83.0385 61.8348 83.0385 62.0772C83.0385 62.6025 84.2881 63.0873 84.6912 62.6833C84.8524 62.5217 86.102 59.6529 87.5129 56.3801C89.0446 52.7033 90.133 50.6022 90.3346 50.9254C90.5764 51.3699 96.4213 65.7136 110.288 99.8154C111.699 103.29 112.868 106.28 112.868 106.442C112.868 106.684 66.8742 106.28 66.592 106.038C66.5517 105.957 67.6804 103.129 69.1315 99.7346C70.5424 96.3002 71.6711 93.4718 71.6308 93.4314C71.5904 93.391 71.1873 93.2698 70.7036 93.1082C69.6959 92.7849 71.9129 87.8555 49.1781 141.352C44.7037 151.897 40.2293 162.403 39.2216 164.706C38.2542 166.968 37.5689 169.029 37.6898 169.231C37.8511 169.473 41.4386 169.635 47.0014 169.635H56.0308V167.615H48.1301C41.9627 167.615 40.2697 167.494 40.4309 167.09C40.5518 166.847 42.2851 162.685 44.341 157.918C46.3564 153.15 49.6619 145.311 51.7177 140.544C53.7332 135.776 57.6432 126.523 60.4246 120.018L65.5036 108.179L89.488 108.22C102.669 108.22 113.553 108.381 113.714 108.543C113.835 108.704 114.722 110.725 115.649 113.068C118.551 120.22 124.558 135.129 131.37 151.817C134.958 160.584 137.86 167.898 137.86 168.059C137.86 168.261 137.739 168.383 137.578 168.383C137.376 168.342 133.869 168.342 129.717 168.383C122.421 168.423 122.139 168.463 122.139 169.231C122.139 170.039 122.421 170.039 138.384 170.039C147.292 170.039 156.241 169.837 158.216 169.635C175.832 167.615 186.796 158.807 189.255 144.746C191.432 132.22 187.602 121.553 178.613 114.927C173.615 111.21 165.996 108.543 158.418 107.816C156.08 107.614 153.54 107.29 152.775 107.169C151.404 106.927 151.404 106.886 154.387 105.836C162.61 102.927 168.657 97.6335 172.325 90.2394C174.985 84.8656 175.469 82.4413 175.227 75.8957C174.985 69.0672 173.937 65.3904 170.833 60.7438C166.44 54.1578 159.184 50.0769 148.582 48.1375C145.519 47.6122 140.44 47.4506 117.06 47.3294L89.2462 47.1274L87.5129 51.3295ZM146.768 49.6325C153.661 50.5618 161.24 53.673 165.15 57.1074C168.133 59.7337 170.793 63.9762 172.244 68.34C173.292 71.5724 173.454 72.6633 173.494 76.9058C173.534 82.3201 172.728 86.0777 170.511 90.4415C167.246 96.9062 160.313 102.442 152.331 104.906C146.567 106.684 142.294 107.007 128.186 106.684L115.085 106.401L114.037 103.775C112.787 100.704 95.9779 59.4509 93.5593 53.471C92.6322 51.2891 91.9066 49.3092 91.9066 49.1072C91.9066 48.582 142.818 49.0668 146.768 49.6325ZM150.356 108.785C164.706 109.149 173.252 112.098 180.185 119.089C185.184 124.139 187.361 129.19 187.723 136.705C187.885 140.22 187.764 141.958 187.119 145.069C183.773 161.271 170.39 168.867 146.003 168.342L140.198 168.221L137.618 161.756C135.361 156.14 129.637 142.119 121.494 122.159C117.141 111.412 116.093 108.826 116.093 108.583C116.093 108.341 136.127 108.462 150.356 108.785Z" fill="black"/>
+    </svg>
+
+    <!-- Контент (ПК), меню -->
+    <div class="md:flex md:flex-row md:w-full w-0 md:h-full h-0">
+        <img id="currentImageBigPC" src="../../public/img/house2Crop.png" alt="Ландшафтные работы" class="md:max-h-[60vw] md:w-auto md:max-w-[40vw] hidden md:inline-block">
+
+        <div class="md:grid grid-cols-6 grid-rows-8 w-full h-[40vw]">
+            <div class="items-center hidden md:flex row-start-2 row-end-3 col-start-3 col-end-5 justify-center">
+                <div class="text-[16px] rounded-full border-[#776E6E] border py-1 px-3">
+                    СТРОИТЕЛЬСТВО
+                </div>
+            </div>
+
+            <div class="justify-center items-start col-start-1 col-end-7 row-start-3 row-end-4 hidden md:flex">
+                <h1 class="text-[5vw] font-light z-10 text-nowrap">MODERN HOUSE</h1>
+            </div>
+
+            <!-- Кнопки свапа изображений -->
+            <div class="col-start-2 col-end-3 row-start-5 row-end-6 justify-center items-center z-10 hidden md:flex">
+                <button onclick="prevImage()" class="hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="col-start-5 col-end-6 row-start-5 row-end-6 justify-center items-center z-10 hidden md:flex">
+                <button onclick="nextImage()" class="hover:cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg> 
+                </button>
+            </div>
+
+            <div class="col-start-2 col-end-6 row-start-4 row-end-7 flex justify-center items-center">
+                <img id="currentImageSmallPC" src="../../public/img/house2Crop.png" alt="Ландшафтные работы" class="h-[30vw] max-h-[25vw] hidden md:inline-block">
+            </div>
+
+            <div class="hidden md:flex col-start-1 col-end-7 row-start-8 row-end-9 flex-col items-start mx-[10vw]">
+                <p class="text-[1vw] mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Velit laoreet id donec ultrices tincidunt arcu non sodales 
+                </p>
+                <button id="load-01" class="justify-self-start underline text-[#776E6E] mt-1 text-[1vw]">
+                    ПОДРОБНЕЕ
+                </button>
+            </div>
+
+            <div class="fixed right-[40px] md:right-[2vw] top-[20px] py-4 z-[11] md:relative md:mx-0 col-start-6 row-span-1">
+                <button id="open-menu" class="transform ease-in-out duration-300 hover:translate-y-[-6px]">
+                    <svg class="text-neutral-800 md:w-10 w-8 md:mx-[20px]" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"></path> </g></svg>
+                </button>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Контент Мобилка -->
+    <div class="mt-[12vh] flex items-center flex-col justify-center md:hidden">
+        <div class="text-[8px] rounded-full border-[#776E6E] border py-1 px-3">
+            СТРОИТЕЛЬСТВО
+        </div>
+
+        <h1 class="text-[30px] absolute top-[17vh] font-light z-10">MODERN HOUSE</h1>
+        <div class="relative mt-12 flex justify-center">
+            <img id="currentImageSmallM" src="../../public/img/house3Crop.png" alt="Современный дом" class="w-[50%] relative z-0">
+        </div>
+
+        <!-- Кнопки свапа изображений -->
+        <div class="flex justify-center text-[#776E6E] space-x-4 my-8">
+            <button onclick="prevImage()" class="hover:cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+            </button>
+              
+            <button onclick="nextImage()" class="hover:cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg> 
+            </button> 
+        </div>
+
+        <!-- Картинка и текст с кнопкой "подробнее" -->
+        <div class="px-[30px]">
+            <img id="currentImageBigM" src="../../public/img/house3Crop.png" alt="Современный дом" class="">
+
+            <p class="text-[14px] mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Velit laoreet id donec ultrices tincidunt arcu non sodales 
+            </p>
+            <button id="load-01" class="justify-self-start underline text-[#776E6E] mt-1 md:hidden">
+                Подробнее
+            </button>
+        </div>
+    </div>
+    <script src="../js/switchImg.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастерская</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+<body class="m-0 font-Manrope overflow-x-hidden">
+    <!-- Menu -->
+    <nav id="menu" class="fixed transform duration-1000 ease-in-out w-full h-screen bg-neutral-300 top-[-100vh] z-[13]">
+        <div class="md:mx-[40px] lg:mx-auto">
+            <!-- close menu button -->
+            <button id="close-menu" class="fixed right-[20px] md:right-[40px] md:top-[20px] py-4 md:mx-[40px] lg:mx-auto transform ease-in-out duration-300 hover:translate-y-[-6px]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-neutral-800 w-12 md:w-14 md:mx-[20px]">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" />
+                </svg>              
+            </button>                
+        </div>
+
+        <ul class="flex flex-col items-end mt-[40%] md:mt-[200px] mr-[5%] text-neutral-800">
+            <li>
+                <a href="home.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Домашняя</i></a>
+            </li>
+            <li>
+                <a href="catalog.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Каталог</i></a>
+            </li>
+            <li>
+                <a href="contacts.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Контакты</i></a>
+            </li>
+            <li>
+                <a href="landing.html" class="ref text-[42px] md:text-[76px] text-neutral-400 transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-400 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Мастерская</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- open menu button -->
+    <div class="fixed right-[40px] top-[20px] py-4 md:mx-[40px] lg:mx-auto z-[11]">
+        <button id="open-menu" class="transform ease-in-out duration-300 hover:translate-y-[-6px]">
+            <svg class="text-neutral-800 md:w-10 w-8 md:mx-[20px]" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"></path> </g></svg>
+        </button>                
+    </div>
+
+    <!-- Лого, фотографии, кнопка -->
+    <div class="px-[25px] mt-[80px] md:px-[140px]">
+        <div class="grid grid-cols-4 grid-rows-3 font-semibold border-b pb-4 border-opacity-100 border-[#776E6E]">
+            <h1 class="text-[36vw] md:text-[350px] col-span-3 row-span-2 md:justify-self-center md:tracking-widest">ART</h1>
+            <h1 class="rotate-90 transform scale-x-[-1] scale-y-[-1] col-start-4 col-end-5 row-span-3 text-[16vw] md:text-[120px] justify-self-start mt-12">BUILDING</h1>
+            <h2 class="col-span-3 row-start-3 text-[4vw] md:text-[36px] font-medium uppercase md:justify-self-center"><span>Архитектурно-строительная</span><br>компания</h2>
+        </div>
+
+        <div class="w-full relative my-10 pb-[50vh] md:pb-[65vh]">
+            <img src="../../public/img/house1.png" alt="Современный дом" class="w-[50%] md:w-[30%] absolute left-0 top-[6vh] md:left-[22vh]">
+            <img src="../../public/img/house1.png" alt="Современный дом" class="w-[40%] md:w-[25%] absolute top-0 right-0 md:right-[24vh]">
+            <img src="../../public/img/house1.png" alt="Современный дом" class="w-[60%] md:w-[40%] absolute top-[36vh] md:top-[16vh] left-[2vh] md:left-[48vh]">
+            <img src="../../public/img/house1.png" alt="Современный дом" class="w-[60%] md:w-[40%] absolute top-[12vh] right-[2vh] md:top-[6vh] md:right-[14vh]">
+            <img src="../../public/img/house1.png" alt="Современный дом" class="w-[50%] md:w-[30%] absolute top-[24vh] md:top-[36vh] left-0 md:left-[34vh]">
+            <img src="../../public/img/house1.png" alt="Современный дом" class="w-[40%] md:w-[25%] absolute top-[30vh] right-[6vh]">
+            <button class="absolute top-[44vh] md:top-[60vh] font-extralight md:text-[20px] right-0 text-[12px] py-2 px-4 md:py-3 border border-neutral-700 hover:bg-neutral-700 hover:text-white duration-300 ease-in-out">
+                ВСЕ ПРОЕКТЫ
+            </button>
+        </div>
+
+        <div class="relative text-[16px] text-end uppercase md:text-[40px] md:w-[80%] ml-auto">
+            <p>гарантируем ответственность и полную реализацию вашей мечты, и знаем, что ключ к успеху заключается в том, чтобы доверить нам весь процесс — от первых набросков на бумаге до последнего штриха на вашем новом доме</p>
+        </div>
+    </div>
+
+    <!-- Черный фон -->
+    <div class="black-bg mt-4 flex flex-col items-center md:items-start h-[120vh] md:h-auto md:w-full text-white bg-[#141414]">
+        <div class="px-[25px] md:px-[140px]">
+            <article class="mt-[15vh] md:text-[40px] text-[16px] uppercase text-end w-[80%] float-end">
+                выбирая полный цикл с нашей компанией, вы выбираете спутника в своём путешествии, человека, который разделит вашу страсть и превратит вдохновение в реальность. предлагаем вам не только архитектурные решения, но и управление проектом, выбор материалов, строительство и даже декорирование.
+            </article>
+        </div>
+
+        <!-- Услуги мобила -->
+        <div class="md:hidden">
+            <div class="mt-10 text-[22px] w-full">
+                <a href="02.html" class="bg-[#2F2F2F] h-[30px] flex flex-row items-center justify-between px-[25px]">
+                    <h3 class="flex justify-between items-end"><span class="font-extralight mr-4 text-[14px] mb-1">01</span>проектирование</h3>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.25" y="0.25" width="19.5" height="19.5" stroke="#FDFDFD" stroke-width="0.5"/>
+                        <path d="M13.1768 10.1768C13.2744 10.0791 13.2744 9.92085 13.1768 9.82322L11.5858 8.23223C11.4882 8.1346 11.3299 8.1346 11.2322 8.23223C11.1346 8.32986 11.1346 8.48816 11.2322 8.58579L12.6464 10L11.2322 11.4142C11.1346 11.5118 11.1346 11.6701 11.2322 11.7678C11.3299 11.8654 11.4882 11.8654 11.5858 11.7678L13.1768 10.1768ZM7 10.25L13 10.25L13 9.75L7 9.75L7 10.25Z" fill="#FDFDFD"/>
+                    </svg>
+                </a>
+    
+                <a href="03.html" class="bg-[#292929] h-[30px] flex flex-row items-center justify-between px-[25px]">
+                    <h3 class="font-extralight flex justify-between items-end"><span class="mr-4 text-[14px] mb-1">02</span>дизайн интерьера</h3>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.25" y="0.25" width="19.5" height="19.5" stroke="#FDFDFD" stroke-width="0.5"/>
+                        <path d="M13.1768 10.1768C13.2744 10.0791 13.2744 9.92085 13.1768 9.82322L11.5858 8.23223C11.4882 8.1346 11.3299 8.1346 11.2322 8.23223C11.1346 8.32986 11.1346 8.48816 11.2322 8.58579L12.6464 10L11.2322 11.4142C11.1346 11.5118 11.1346 11.6701 11.2322 11.7678C11.3299 11.8654 11.4882 11.8654 11.5858 11.7678L13.1768 10.1768ZM7 10.25L13 10.25L13 9.75L7 9.75L7 10.25Z" fill="#FDFDFD"/>
+                    </svg>
+                </a>
+    
+                <a href="01.html" class="bg-[#242424] h-[30px] flex flex-row items-center justify-between px-[25px]">
+                    <h3 class="font-extralight flex justify-between items-end"><span class="mr-4 text-[14px] mb-1">03</span>строительство</h3>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.25" y="0.25" width="19.5" height="19.5" stroke="#FDFDFD" stroke-width="0.5"/>
+                        <path d="M13.1768 10.1768C13.2744 10.0791 13.2744 9.92085 13.1768 9.82322L11.5858 8.23223C11.4882 8.1346 11.3299 8.1346 11.2322 8.23223C11.1346 8.32986 11.1346 8.48816 11.2322 8.58579L12.6464 10L11.2322 11.4142C11.1346 11.5118 11.1346 11.6701 11.2322 11.7678C11.3299 11.8654 11.4882 11.8654 11.5858 11.7678L13.1768 10.1768ZM7 10.25L13 10.25L13 9.75L7 9.75L7 10.25Z" fill="#FDFDFD"/>
+                    </svg>
+                </a>
+    
+                <a href="04.html" class="bg-[#1F1F1F] h-[30px] flex flex-row items-center justify-between px-[25px]">
+                    <h3 class="font-extralight flex justify-between items-end"><span class="mr-4 text-[14px] mb-1">04</span>ландшафтные работы</h3>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.25" y="0.25" width="19.5" height="19.5" stroke="#FDFDFD" stroke-width="0.5"/>
+                        <path d="M13.1768 10.1768C13.2744 10.0791 13.2744 9.92085 13.1768 9.82322L11.5858 8.23223C11.4882 8.1346 11.3299 8.1346 11.2322 8.23223C11.1346 8.32986 11.1346 8.48816 11.2322 8.58579L12.6464 10L11.2322 11.4142C11.1346 11.5118 11.1346 11.6701 11.2322 11.7678C11.3299 11.8654 11.4882 11.8654 11.5858 11.7678L13.1768 10.1768ZM7 10.25L13 10.25L13 9.75L7 9.75L7 10.25Z" fill="#FDFDFD"/>
+                    </svg>
+                </a>
+            </div>
+    
+            <div class="px-[25px] md:px-[140px]">
+                <article class="mt-[4vh] text-[16px] uppercase text-justify">
+                    Услуга проектирования — это ключ к созданию уникальных, функциональных и вдохновляющих пространств.  предоставляем услугу проектирования, которая идёт далеко за пределы чертежей и планов.Мы анализируем потребности и ожидания, чтобы разработать дизайн, который соответствует вашим целям.  учитываем технические аспекты и устойчивость, чтобы создать долгосрочные решения.
+                </article>
+            </div>
+        </div>
+
+        <!-- Услуги десктоп -->
+        <div class="hidden md:inline-block">
+            <div class="mt-[32vh] w-screen font-extralight h-[70vh] bg-[#1F1F1F] grid grid-cols-12 grid-rows-1">
+
+                <a href="02.html" class="flex flex-row col-span-9 h-full pl-[70px]">
+                    <div class="flex flex-col justify-between mx-auto py-12">
+                        <h3 class="text-[20px]">Наши услуги</h3>
+                        <div>
+                            <p class="text-[30px]">01</p>
+                            <h2 class="text-[40px]">ПРОЕКТИРОВАНИЕ</h2>
+                        </div>
+                    </div>
+
+                    <div class="uppercase text-[1.5vw] flex flex-col justify-center space-y-4 px-8 text-justify w-auto">
+                        <p>
+                            Услуга проектирования — это ключ к созданию уникальных, функциональных и вдохновляющих пространств. Мы предоставляем услугу проектирования, которая идёт далеко за пределы чертежей и планов.Мы анализируем потребности и ожидания, чтобы разработать дизайн, который соответствует вашим целям. Мы учитываем технические аспекты и устойчивость, чтобы создать долгосрочные решения.
+                        </p>
+                        <p>
+                            Наша команда профессионалов в области архитектуры и дизайна готова взять на себя ответственность за каждый этап процесса проектирования. Мы не просто создаем пространства, мы стремимся к тому, чтобы они стали частью вашей жизни, вашей истории и вашей эстетики.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="03.html" class="bg-[#242424] col-start-10 col-end-11 h-full flex flex-col justify-center items-center">
+                    <div class="flex flex-col justify-between">
+                        <div class="rotate-90 scale-x-[-1] scale-y-[-1]">
+                            <h3 class="text-[40px] whitespace-nowrap">ДИЗАЙН ИНТЕРЬЕРА</h3>
+                        </div>
+                        <div class="rotate-90 scale-x-[-1] scale-y-[-1] mt-[50px]">
+                            <p class="text-[30px]">02</p>
+                        </div>
+                    </div>
+                </a>
+                
+
+                <a href="01.html" class="bg-[#292929] col-start-11 col-end-12 h-full flex flex-col justify-center items-center">
+                    <div class="flex flex-col justify-between">
+                        <div class="rotate-90 scale-x-[-1] scale-y-[-1]">
+                            <h3 class="text-[40px] whitespace-nowrap">СТРОИТЕЛЬСТВО</h3>
+                        </div>
+                        <div class="rotate-90 scale-x-[-1] scale-y-[-1] mt-[50px]">
+                            <p class="text-[30px]">03</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="04.html" class="bg-[#2F2F2F] col-start-12 h-full flex flex-col justify-center items-center">
+                    <div class="flex flex-col justify-between">
+                        <div class="rotate-90 scale-x-[-1] scale-y-[-1]">
+                            <h3 class="text-[40px] whitespace-nowrap">ЛАНДШАФТНЫЕ РАБОТЫ</h3>
+                        </div>
+                        <div class="rotate-90 scale-x-[-1] scale-y-[-1] mt-[50px]">
+                            <p class="text-[30px]">04</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-[30px] text-center mt-[10vh] md:text-[65px] md:my-[50vh] md:flex md:w-full md:justify-center items-center">
+            <h2 class="mt-12">СОЗДАДИМ ДЛЯ ВАС ОСОБЕННЫЙ ДОМ</h2>
+        </div>
+    </div>
+
+    <div class="px-[25px] md:pl-[12vh] flex flex-col h-[50vh] md:h-[70vh] text-white bg-[#141414]">
+        <!-- Форма -->
+        <div class="my-8 md:flex md:flex-col md:items-start md:my-16">
+            <h2 class="text-[26px] md:text-[65px]">СВЯЖИТЕСЬ С НАМИ</h2>
+            <form action="#" method="POST" class="mt-2 md:text-[30px]">
+                <div class="mb-4">
+                    <input type="email" name="email" class="bg-[#141414] placeholder:text-neutral-400 w-full px-3 py-2 border-b border-neutral-300 focus:outline-none" placeholder="Ваш E-mail" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" id="phone" name="phone" class="bg-[#141414] placeholder:text-neutral-400 w-full px-3 py-2 border-b border-neutral-300 focus:outline-none" placeholder="Ваш номер" required>
+                </div>
+                <div class="mb-4">
+                    <textarea id="message" name="message" class="bg-[#141414] placeholder:text-neutral-400 w-full px-3 py-2 border-b border-neutral-300 focus:outline-none" rows="1" placeholder="Как к вам обращаться?" required></textarea>
+                </div>
+                <div class="flex justify-start">
+                    <button type="submit" class="transform ease-in-out duration-300 hover:bg-neutral-400 hover:text-white px-4 py-2 text-neutral-400 border-2 border-neutral-400 bg-transparent font-light">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

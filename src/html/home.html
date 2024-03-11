@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя страница</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+<body class="m-0 font-Manrope">
+    <!-- Menu -->
+    <nav id="menu" class="fixed transform duration-1000 ease-in-out w-full h-screen bg-neutral-300 top-[-100vh] z-[13]">
+        <div class="md:mx-[40px] lg:mx-auto">
+            <!-- close menu button -->
+            <button id="close-menu" class="fixed right-[20px] md:right-[40px] md:top-[20px] py-4 md:mx-[40px] lg:mx-auto transform ease-in-out duration-300 hover:translate-y-[-6px]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-neutral-800 w-12 md:w-14 md:mx-[20px]">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" />
+                </svg>              
+            </button>                
+        </div>
+
+        <ul class="flex flex-col items-end mt-[40%] md:mt-[200px] mr-[5%] text-neutral-800">
+            <li>
+                <a href="/" class="ref text-[42px] md:text-[76px] text-neutral-400 transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-400 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Домашняя</i></a>
+            </li>
+            <li>
+                <a href="catalog.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Каталог</i></a>
+            </li>
+            <li>
+                <a href="contacts.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Контакты</i></a>
+            </li>
+            <li>
+                <a href="landing.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Мастерская</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- logo -->
+    <svg class="text-neutral-800 fixed top-[20px] z-[1000] md:w-20 w-12 mx-[20px]" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100.573 0.378947C91.1004 1.38907 79.6927 4.33863 69.7361 8.37912C51.0727 15.9348 33.3766 30.0362 21.0821 47.2082C7.53795 66.0773 0 89.6738 0 113.068C0 151.008 18.986 186.403 50.5889 207.373C64.6168 216.707 76.7904 221.555 94.5267 224.869C100.331 225.919 101.097 226 113.069 226C125.041 226 125.848 225.919 131.813 224.828C156.201 220.384 176.557 209.798 193.367 192.787C218.036 167.817 229.363 134.281 225.131 98.5225C222.108 72.6633 209.007 47.3295 189.457 29.5513C171.317 13.0257 149.348 3.04567 125.283 0.378947C120.809 -0.146316 105.37 -0.105911 100.573 0.378947ZM128.589 2.35879C149.066 5.42956 167.125 13.3085 183.41 26.3593C188.328 30.2786 197.841 40.1778 201.751 45.39C211.99 59.0065 218.198 72.5017 221.866 88.9465C223.76 97.5124 224.325 102.967 224.325 113.27C224.325 123.493 223.801 128.584 221.906 137.109C217.149 158.564 207.354 176.383 191.674 192.1C174.542 209.272 154.75 219.333 129.395 223.657C125.928 224.263 122.905 224.384 112.868 224.384C99.3639 224.343 95.7763 223.939 85.457 221.313C59.6587 214.646 37.0851 199.01 21.7673 177.11C-1.33023 144.14 -4.83719 100.664 12.7379 64.3803C26.2014 36.5817 51.1533 15.1267 80.4183 6.19726C85.6182 4.62146 93.519 2.88405 97.9531 2.39919C100.049 2.15676 102.347 1.87393 102.992 1.79312C105.37 1.46988 125.646 1.91433 128.589 2.35879Z" fill="black"/>
+        <path d="M87.5129 51.3295C86.5454 53.5922 85.1346 56.865 84.409 58.562C83.6431 60.259 83.0385 61.8348 83.0385 62.0772C83.0385 62.6025 84.2881 63.0873 84.6912 62.6833C84.8524 62.5217 86.102 59.6529 87.5129 56.3801C89.0446 52.7033 90.133 50.6022 90.3346 50.9254C90.5764 51.3699 96.4213 65.7136 110.288 99.8154C111.699 103.29 112.868 106.28 112.868 106.442C112.868 106.684 66.8742 106.28 66.592 106.038C66.5517 105.957 67.6804 103.129 69.1315 99.7346C70.5424 96.3002 71.6711 93.4718 71.6308 93.4314C71.5904 93.391 71.1873 93.2698 70.7036 93.1082C69.6959 92.7849 71.9129 87.8555 49.1781 141.352C44.7037 151.897 40.2293 162.403 39.2216 164.706C38.2542 166.968 37.5689 169.029 37.6898 169.231C37.8511 169.473 41.4386 169.635 47.0014 169.635H56.0308V167.615H48.1301C41.9627 167.615 40.2697 167.494 40.4309 167.09C40.5518 166.847 42.2851 162.685 44.341 157.918C46.3564 153.15 49.6619 145.311 51.7177 140.544C53.7332 135.776 57.6432 126.523 60.4246 120.018L65.5036 108.179L89.488 108.22C102.669 108.22 113.553 108.381 113.714 108.543C113.835 108.704 114.722 110.725 115.649 113.068C118.551 120.22 124.558 135.129 131.37 151.817C134.958 160.584 137.86 167.898 137.86 168.059C137.86 168.261 137.739 168.383 137.578 168.383C137.376 168.342 133.869 168.342 129.717 168.383C122.421 168.423 122.139 168.463 122.139 169.231C122.139 170.039 122.421 170.039 138.384 170.039C147.292 170.039 156.241 169.837 158.216 169.635C175.832 167.615 186.796 158.807 189.255 144.746C191.432 132.22 187.602 121.553 178.613 114.927C173.615 111.21 165.996 108.543 158.418 107.816C156.08 107.614 153.54 107.29 152.775 107.169C151.404 106.927 151.404 106.886 154.387 105.836C162.61 102.927 168.657 97.6335 172.325 90.2394C174.985 84.8656 175.469 82.4413 175.227 75.8957C174.985 69.0672 173.937 65.3904 170.833 60.7438C166.44 54.1578 159.184 50.0769 148.582 48.1375C145.519 47.6122 140.44 47.4506 117.06 47.3294L89.2462 47.1274L87.5129 51.3295ZM146.768 49.6325C153.661 50.5618 161.24 53.673 165.15 57.1074C168.133 59.7337 170.793 63.9762 172.244 68.34C173.292 71.5724 173.454 72.6633 173.494 76.9058C173.534 82.3201 172.728 86.0777 170.511 90.4415C167.246 96.9062 160.313 102.442 152.331 104.906C146.567 106.684 142.294 107.007 128.186 106.684L115.085 106.401L114.037 103.775C112.787 100.704 95.9779 59.4509 93.5593 53.471C92.6322 51.2891 91.9066 49.3092 91.9066 49.1072C91.9066 48.582 142.818 49.0668 146.768 49.6325ZM150.356 108.785C164.706 109.149 173.252 112.098 180.185 119.089C185.184 124.139 187.361 129.19 187.723 136.705C187.885 140.22 187.764 141.958 187.119 145.069C183.773 161.271 170.39 168.867 146.003 168.342L140.198 168.221L137.618 161.756C135.361 156.14 129.637 142.119 121.494 122.159C117.141 111.412 116.093 108.826 116.093 108.583C116.093 108.341 136.127 108.462 150.356 108.785Z" fill="black"/>
+    </svg>
+
+    <!-- open menu button -->
+    <div class="fixed right-[40px] top-[20px] py-4 md:mx-[40px] lg:mx-auto z-[11]">
+        <button id="open-menu" class="transform ease-in-out duration-300 hover:translate-y-[-6px]">
+            <svg class="text-neutral-800 md:w-10 w-8 md:mx-[20px]" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"></path> </g></svg>
+        </button>                
+    </div>
+
+    <!-- Хедер -->
+    <header class="px-[31px] md:px-0 mt-[70px]">
+        <div class="bg-[#DBDDDA] md:top-0 md:left-0 left-12 w-[220px] h-[260px] md:w-[50%] md:h-[840px] absolute"></div>
+        <div class="bg-white md:top-40 md:left-0 md:w-[25%] md:h-[300px] absolute"></div>
+        <div class="relative md:mx-auto">
+            <h1 class="text-[76px] md:text-[260px] xl:text-[280px] md:ml-[4%] xl:ml-[12%] md:flex md:flex-wrap relative" style="line-height: 1.4;">
+                <span>ART</span><br><span class="font-semibold">BUILDING</span>
+            </h1>
+        </div>
+    </header>
+
+    <main class="mt-20">
+        <!-- О компании -->
+        <article class="px-[31px] md:px-0 md:flex md:justify-end text-justify">
+            <div class="md:flex md:w-[60%] md:mr-[10%] md:h-auto md:flex-wrap">
+                <h2 class="flex justify-end text-[18px] mb-4 md:text-[76px]">О КОМПАНИИ</h2>
+                <p class="flex text-[14px] md:text-[32px]">
+                    Архитектурно-строительная компания ART BUILDING является лидером в индустрии строительства, специализируясь на использовании современных технологий и материалов, основанных на блочной архитектуре. Наша компания предоставляет полный цикл услуг — от проектирования до воплощения в жизнь самых сложных архитектурных задумок.
+                </p>
+            </div>
+        </article>
+        <img class="mt-14 w-full" src="../../public/img/group.png" alt="Люди в офисе работают">
+
+        <!-- Цитата -->
+        <blockquote class="mt-10 px-[31px] md:px-0 md:w-[50%] md:ml-[5%] text-justify">
+            <svg class="inline-block mr-2 md:w-12 w-8 h-auto" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5615 17.0867C17.9843 16.326 18.8311 15.1959 19.1572 13.6066C19.3309 12.6673 18.8243 10.9589 18.0908 10.0806C17.1604 8.9645 16.0955 8.5347 14.4812 8.58689C13.3567 8.609 13.1396 8.57007 13.2144 8.37183C13.2704 8.22769 13.4024 7.77668 13.4975 7.37954C13.8014 6.15212 14.3416 4.87335 15.3415 3.02094C15.8781 2.06804 16.2681 1.24004 16.2142 1.20315C15.9273 0.909851 12.5557 4.05428 12.0365 5.07983C10.7748 7.6351 10.2241 9.85527 10.1764 12.4801C10.1534 14.5258 10.6491 15.6003 12.1414 16.7235C12.8067 17.2207 13.0597 17.2963 14.3642 17.3851C15.6145 17.4551 15.9414 17.4048 16.5615 17.0867Z" fill="#151515" fill-opacity="0.75"/>
+                <path d="M6.05368 17.197C6.25372 17.1452 6.74626 16.8798 7.14836 16.5951C9.72574 14.7444 9.75034 10.9424 7.19511 9.20836C6.13362 8.4708 5.82624 8.39452 4.35675 8.46663C3.7039 8.47655 3.16043 8.43352 3.16124 8.36111C3.17039 7.54644 4.66123 3.96199 5.67766 2.25464C6.04696 1.66176 6.30688 1.12183 6.2529 1.08494C6.10949 0.938294 3.86107 2.55777 3.30987 3.20269C3.0524 3.52537 2.70326 3.93744 2.57453 4.09878C1.65565 5.19174 0.776722 7.57074 0.350004 10.046C-0.0378111 12.2863 -0.0449324 12.9199 0.322353 14.1195C0.934496 16.1189 2.49872 17.2973 4.52961 17.2865C5.16433 17.2764 5.85385 17.2307 6.05368 17.197Z" fill="#151515" fill-opacity="0.75"/>
+            </svg>
+            <span class="text-[14px] md:text-[32px]">В каждом здании, которое мы возводим, заложена не только каменная прочность, но и дух инноваций. Мы строим не просто стены, а пространства для воплощения мечтаний и идей. Архитектура — это не просто наше дело, это наше искусство, которое оставляет след в истории.</span>
+            <svg class="inline-block ml-30 md:w-12 w-8 h-auto" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.70056 0.360594C1.22386 1.17467 0.352983 2.36739 0.031138 4.03341C-0.139251 5.01788 0.409779 6.7975 1.18599 7.70624C2.17046 8.86109 3.28745 9.29653 4.97241 9.2208C6.1462 9.18294 6.37338 9.2208 6.29765 9.42905C6.24086 9.58051 6.10833 10.0538 6.01367 10.4703C5.71076 11.7577 5.16173 13.1019 4.1394 15.0519C3.59037 16.0553 3.19279 16.9262 3.24959 16.964C3.5525 17.2669 7.036 13.9349 7.5661 12.8558C8.85348 10.1674 9.40251 7.83876 9.42144 5.09361C9.42144 2.95429 8.89135 1.8373 7.31998 0.68244C6.6195 0.171274 6.35445 0.0955448 4.99134 0.0198174C3.68503 -0.0369797 3.34425 0.0198174 2.70056 0.360594Z" fill="#151515" fill-opacity="0.75"/>
+                <path d="M13.6809 0.11471C13.4726 0.171507 12.9615 0.455486 12.545 0.7584C9.87556 2.72734 9.89449 6.70307 12.5828 8.48269C13.6998 9.23997 14.0217 9.3157 15.5552 9.22104C16.2367 9.2021 16.8047 9.23997 16.8047 9.3157C16.8047 10.1676 15.2901 13.9351 14.2489 15.7337C13.8702 16.3584 13.6052 16.9264 13.662 16.9643C13.8134 17.1157 16.1421 15.3929 16.71 14.7113C16.9751 14.3706 17.3348 13.9351 17.4673 13.7647C18.4139 12.6099 19.3037 10.1108 19.7202 7.51715C20.0989 5.16957 20.0989 4.50695 19.7013 3.25743C19.0387 1.17491 17.3916 -0.036747 15.2712 0.00111771C14.6086 0.02005 13.8892 0.0768452 13.6809 0.11471Z" fill="#151515" fill-opacity="0.75"/>
+            </svg>
+        </blockquote>
+
+        <!-- Команда -->
+        <div class="md:flex md:justify-center">
+            <div class="flex flex-row md:flex-col md:flex-wrap md:w-auto justify-between mt-14 w-full">
+                <img class="w-1/3 md:w-auto" src="../../public/img/team1.png" alt="Первый человек из команды">
+                <img class="w-1/3 md:w-auto" src="../../public/img/team2.png" alt="Второй человек из команды">
+                <img class="w-1/3 md:w-auto" src="../../public/img/team3.png" alt="Третий человек из команды">
+            </div>
+            <article class="px-[31px] md:px-0 mt-14 md:flex md:w-[40%] md:ml-[10%] text-justify md:h-auto md:flex-wrap">
+                <h2 class="flex justify-start md:justify-center text-[18px] mb-4 md:text-[76px]">КОМАНДА</h2>
+                <p class="text-[14px] md:text-[32px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Velit laoreet id donec ultrices tincidunt arcu non sodales
+                </p>
+                <br>
+                <p class="text-[14px] md:text-[32px] mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Velit laoreet id donec ultrices tincidunt arcu non sodales
+                </p>
+            </article>
+        </div>
+
+        <!-- Реализованные проекты -->
+        <div class="mt-14 px-[31px] md:mx-auto xl:ml-[10%]">
+            <h2 class="flex justify-start text-[18px] mb-8 md:text-[76px]">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h2>
+            <div class="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-8">
+                <div class="item">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+
+                <div class="item">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+
+                <div class="item">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+
+                <div class="item">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+
+                <div class="item hidden">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+
+                <div class="item hidden">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+
+                <div class="item hidden">
+                    <img src="../../public/img/house1.png" alt="Современный дом">
+                    <h3 class="text-[14px] mt-2 md:text-[24px]">MODERN HOUSE</h3>
+                    <h4 class="text-[14px] md:text-[24px]">Дом необычной красоты на берегу моря</h4>
+                </div>
+            </div>
+
+            <div class="flex items-center mt-8 hover:cursor-pointer md:justify-end md:mr-[10%]" id="load-more">
+                <div class="border border-orange-300 hover:bg-orange-300 transition duration-300 ease-in-out inline-block mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:w-10 md:h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>              
+                </div>
+                <button class="hover:underline md:text-[24px]">ПОКАЗАТЬ ЕЩЁ</button>
+            </div>
+            <script src="../js/loadMore.js"></script>
+        </div>
+
+        <article class="px-[31px] mt-14 md:flex md:w-[70%] md:ml-[5%] md:flex-col text-justify">
+            <h2 class="flex justify-end md:justify-start text-[18px] mb-4 md:text-[76px]">НАША МИССИЯ</h2>
+            <p class="text-[14px] md:text-[32px] md:ml-[20%]">
+                Создать пространства, которые вдохновляют, служат и преображают. Мы стремимся к совершенству в каждом проекте, строим не просто здания, а инновационные и устойчивые обители, отражающие уникальные потребности и стиль каждого клиента.
+            </p>
+        </article>
+    </main>
+    
+    <footer>
+        <div class="px-[31px] mt-14 md:mt-[100px]">
+            <h2 class="flex justify-start text-[18px] md:text-[76px] md:w-[70%] md:ml-[5%]">НАША ГЕОГРАФИЯ</h2>
+            <img src="../../public/img/map.png" alt="Карта" class="mb-20 md:flex md:justify-center w-[90%]">
+        </div>   
+    </footer>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

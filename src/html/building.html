@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ландшафтные работы</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+<body class="m-0 font-Manrope">
+    <!-- Menu -->
+    <nav id="menu" class="fixed transform duration-1000 ease-in-out w-full h-screen bg-neutral-300 top-[-100vh] z-[13]">
+        <div class="md:mx-[40px] lg:mx-auto">
+            <!-- close menu button -->
+            <button id="close-menu" class="fixed right-[20px] md:right-[40px] md:top-[20px] py-4 md:mx-[40px] lg:mx-auto transform ease-in-out duration-300 hover:translate-y-[-6px]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-neutral-800 w-12 md:w-14 md:mx-[20px]">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" />
+                </svg>              
+            </button>                
+        </div>
+
+        <ul class="flex flex-col items-end mt-[40%] md:mt-[200px] mr-[5%] text-neutral-800">
+            <li>
+                <a href="home.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Домашняя</i></a>
+            </li>
+            <li>
+                <a href="catalog.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Каталог</i></a>
+            </li>
+            <li>
+                <a href="contacts.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Контакты</i></a>
+            </li>
+            <li>
+                <a href="landing.html" class="ref text-[42px] md:text-[76px] transform hover:translate-y-[-6px] ease-in-out duration-300 border-neutral-800 border-b-[3px] border-opacity-0 hover:border-opacity-100"><i>Мастерская</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- logo -->
+    <svg class="text-neutral-800 fixed top-[20px] z-[1000] md:w-20 w-12 mx-[20px]" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100.573 0.378947C91.1004 1.38907 79.6927 4.33863 69.7361 8.37912C51.0727 15.9348 33.3766 30.0362 21.0821 47.2082C7.53795 66.0773 0 89.6738 0 113.068C0 151.008 18.986 186.403 50.5889 207.373C64.6168 216.707 76.7904 221.555 94.5267 224.869C100.331 225.919 101.097 226 113.069 226C125.041 226 125.848 225.919 131.813 224.828C156.201 220.384 176.557 209.798 193.367 192.787C218.036 167.817 229.363 134.281 225.131 98.5225C222.108 72.6633 209.007 47.3295 189.457 29.5513C171.317 13.0257 149.348 3.04567 125.283 0.378947C120.809 -0.146316 105.37 -0.105911 100.573 0.378947ZM128.589 2.35879C149.066 5.42956 167.125 13.3085 183.41 26.3593C188.328 30.2786 197.841 40.1778 201.751 45.39C211.99 59.0065 218.198 72.5017 221.866 88.9465C223.76 97.5124 224.325 102.967 224.325 113.27C224.325 123.493 223.801 128.584 221.906 137.109C217.149 158.564 207.354 176.383 191.674 192.1C174.542 209.272 154.75 219.333 129.395 223.657C125.928 224.263 122.905 224.384 112.868 224.384C99.3639 224.343 95.7763 223.939 85.457 221.313C59.6587 214.646 37.0851 199.01 21.7673 177.11C-1.33023 144.14 -4.83719 100.664 12.7379 64.3803C26.2014 36.5817 51.1533 15.1267 80.4183 6.19726C85.6182 4.62146 93.519 2.88405 97.9531 2.39919C100.049 2.15676 102.347 1.87393 102.992 1.79312C105.37 1.46988 125.646 1.91433 128.589 2.35879Z" fill="black"/>
+        <path d="M87.5129 51.3295C86.5454 53.5922 85.1346 56.865 84.409 58.562C83.6431 60.259 83.0385 61.8348 83.0385 62.0772C83.0385 62.6025 84.2881 63.0873 84.6912 62.6833C84.8524 62.5217 86.102 59.6529 87.5129 56.3801C89.0446 52.7033 90.133 50.6022 90.3346 50.9254C90.5764 51.3699 96.4213 65.7136 110.288 99.8154C111.699 103.29 112.868 106.28 112.868 106.442C112.868 106.684 66.8742 106.28 66.592 106.038C66.5517 105.957 67.6804 103.129 69.1315 99.7346C70.5424 96.3002 71.6711 93.4718 71.6308 93.4314C71.5904 93.391 71.1873 93.2698 70.7036 93.1082C69.6959 92.7849 71.9129 87.8555 49.1781 141.352C44.7037 151.897 40.2293 162.403 39.2216 164.706C38.2542 166.968 37.5689 169.029 37.6898 169.231C37.8511 169.473 41.4386 169.635 47.0014 169.635H56.0308V167.615H48.1301C41.9627 167.615 40.2697 167.494 40.4309 167.09C40.5518 166.847 42.2851 162.685 44.341 157.918C46.3564 153.15 49.6619 145.311 51.7177 140.544C53.7332 135.776 57.6432 126.523 60.4246 120.018L65.5036 108.179L89.488 108.22C102.669 108.22 113.553 108.381 113.714 108.543C113.835 108.704 114.722 110.725 115.649 113.068C118.551 120.22 124.558 135.129 131.37 151.817C134.958 160.584 137.86 167.898 137.86 168.059C137.86 168.261 137.739 168.383 137.578 168.383C137.376 168.342 133.869 168.342 129.717 168.383C122.421 168.423 122.139 168.463 122.139 169.231C122.139 170.039 122.421 170.039 138.384 170.039C147.292 170.039 156.241 169.837 158.216 169.635C175.832 167.615 186.796 158.807 189.255 144.746C191.432 132.22 187.602 121.553 178.613 114.927C173.615 111.21 165.996 108.543 158.418 107.816C156.08 107.614 153.54 107.29 152.775 107.169C151.404 106.927 151.404 106.886 154.387 105.836C162.61 102.927 168.657 97.6335 172.325 90.2394C174.985 84.8656 175.469 82.4413 175.227 75.8957C174.985 69.0672 173.937 65.3904 170.833 60.7438C166.44 54.1578 159.184 50.0769 148.582 48.1375C145.519 47.6122 140.44 47.4506 117.06 47.3294L89.2462 47.1274L87.5129 51.3295ZM146.768 49.6325C153.661 50.5618 161.24 53.673 165.15 57.1074C168.133 59.7337 170.793 63.9762 172.244 68.34C173.292 71.5724 173.454 72.6633 173.494 76.9058C173.534 82.3201 172.728 86.0777 170.511 90.4415C167.246 96.9062 160.313 102.442 152.331 104.906C146.567 106.684 142.294 107.007 128.186 106.684L115.085 106.401L114.037 103.775C112.787 100.704 95.9779 59.4509 93.5593 53.471C92.6322 51.2891 91.9066 49.3092 91.9066 49.1072C91.9066 48.582 142.818 49.0668 146.768 49.6325ZM150.356 108.785C164.706 109.149 173.252 112.098 180.185 119.089C185.184 124.139 187.361 129.19 187.723 136.705C187.885 140.22 187.764 141.958 187.119 145.069C183.773 161.271 170.39 168.867 146.003 168.342L140.198 168.221L137.618 161.756C135.361 156.14 129.637 142.119 121.494 122.159C117.141 111.412 116.093 108.826 116.093 108.583C116.093 108.341 136.127 108.462 150.356 108.785Z" fill="black"/>
+    </svg>
+
+    <!-- Верх страницы и кнопка -->
+    <div class="md:flex md:flex-row md:justify-between md:border-b border-neutral-700">
+        <div class="md:flex md:flex-col md:ml-[90px] md:mt-[150px]">
+            <h1 class="absolute hidden md:inline-block text-[42px] top-[80px] md:text-[70px] md:font-light md:static">
+                СТРОИТЕЛЬСТВО
+            </h1>
+            <h1 class="absolute hidden md:inline-block text-[42px] top-[310px] right-[20px] md:text-[70px] md:font-light md:static">
+                ДОМА
+            </h1>
+            <div class="md:absolute md:top-[400px] mt-[400px] md:mt-0 ml-[25px] md:ml-0">
+                <button class="border border-neutral-700 font-light text-[16px] px-[30px] py-1 hover:bg-neutral-700 hover:text-white duration-300 ease-in-out md:text-[20px] md:py-4 md:px-16">
+                    ЗАКАЗАТЬ
+                </button>
+            </div>
+        </div>
+        
+        <div class="fixed right-[40px] md:right-0 top-[20px] py-4 z-[11] md:relative md:mx-0">
+            <button id="open-menu" class="transform ease-in-out duration-300 hover:translate-y-[-6px]">
+                <svg class="text-neutral-800 md:w-10 w-8 md:mx-[20px]" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"></path> </g></svg>
+            </button>                
+        </div>
+        <img src="../../public/img/building2.png" alt="Ландшафтные работы" class="md:max-h-[500px] md:w-auto hidden md:inline-block">
+    </div>
+    
+    <img src="../../public/img/house1.png" alt="Ландшафтные работы" class="absolute w-[80%] mx-auto left-0 right-0 top-[140px] md:hidden">
+    <div class="px-[20px] md:px-[140px] md:w-[80%] md:flex md:flex-col md:mx-auto">
+        <div>
+            <h1 class="absolute text-[42px] top-[86px] md:hidden">
+                СТРОИТЕЛЬСТВО
+            </h1>
+            <h1 class="absolute text-[42px] top-[346px] right-[20px] md:hidden">
+                ДОМА
+            </h1>
+        </div>
+
+        <article class="text-[16px] mt-[40px] md:mt-10 uppercase text-end md:text-[40px]">
+            сочетаем творчество с глубоким пониманием архитектуры, дизайна мебели, теории цвета и психологии человека, чтобы создать особенное пространство, отвечающее вашим потребностям
+        </article>
+
+        <!-- Стадии разработки блок -->
+        <h2 class="text-[12px] mt-12 md:mt-24 mb-4 font-light md:text-[24px] md:mb-12">СТАДИИ<br> СТРОИТЕЛЬСТВА</h2>
+        <div class="grid grid-cols-2 border grid-rows-2 w-full text-[14px] md:text-[32px] border-[#776E6E] border-opacity-45">
+            <div class="flex flex-wrap col-span-1 row-span-1 p-[20px] border-r border-[#776E6E] border-opacity-45">
+                <div class="md:w-[70%]">
+                    <h3 class="">ПРЕДВАРИТЕЛЬНЫЙ РАСЧЕТ СТОИМОСТИ</h3>
+                    <p class="text-[50px] md:text-[90px] font-light text-[#776E6E73] text-opacity-45">
+                        01 /
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap col-start-2 row-span-1 p-[20px]">
+                <div class="md:w-[70%]">
+                    <h3 class="">РАЗРАБОТКА ПРОЕКТНОЙ ДОКУМЕНТАЦИИ</h3>
+                    <p class="text-[50px] md:text-[90px] font-light text-[#776E6E73] text-opacity-45">
+                        02 /
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap col-span-1 row-start-2 p-[20px] border-r border-t border-[#776E6E] border-opacity-45">
+                <div class="md:w-[70%]">
+                    <h3 class="">ОТЧЁТ ПО ГЕОЛОГИИ И ГЕОДЕЗИИ</h3>
+                    <p class="text-[50px] md:text-[90px] font-light text-[#776E6E73] text-opacity-45">
+                        03 /
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap col-start-2 row-start-2 p-[20px] border-t border-[#776E6E] border-opacity-45">
+                <div class="md:w-[90%]">
+                    <h3 class="">ДЕТАЛЬНАЯ СМЕТА СТРОИТЕЛЬСТВА</h3>
+                    <p class="text-[50px] md:text-[90px] font-light text-[#776E6E73] text-opacity-45">
+                        04 /
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:grid md:grid-cols-1 md:grid-rows-5 md:h-[500px]">
+            <img src="../../public/img/buildingMobile.png" class="rounded-xl mt-10 w-full md:row-start-1 md:max-h-[600px] md:justify-self-center">
+    
+            <!-- Карточка -->
+            <div class="rounded-[40px] mt-10 bg-[#F1F1F1] w-full h-[380px] py-10 md:row-start-3 md:justify-self-center">
+                <div class="flex flex-row justify-between items-center ml-4">
+                    <h3 class="rounded-full border py-1 px-3 border-[#776E6E]">СТАНДАРТ</h3>
+                    <div class="flex flex-col items-end mr-3">
+                        <div class="flex flex-row justify-between gap-x-2 items-center">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 15.9375C7.02901 15.9375 5.59104 15.5013 4.36795 14.6841C3.14486 13.8668 2.19158 12.7052 1.62865 11.3462C1.06572 9.98719 0.918435 8.49175 1.20541 7.04902C1.49239 5.60629 2.20074 4.28105 3.2409 3.2409C4.28105 2.20074 5.60629 1.49239 7.04902 1.20541C8.49175 0.918435 9.98719 1.06572 11.3462 1.62865C12.7052 2.19158 13.8668 3.14486 14.6841 4.36795C15.5013 5.59104 15.9375 7.02901 15.9375 8.5C15.9375 10.4726 15.1539 12.3643 13.7591 13.7591C12.3643 15.1539 10.4726 15.9375 8.5 15.9375ZM8.5 2.125C7.23915 2.125 6.00661 2.49889 4.95824 3.19938C3.90988 3.89988 3.09278 4.89552 2.61027 6.0604C2.12776 7.22528 2.00152 8.50707 2.2475 9.7437C2.49348 10.9803 3.10064 12.1162 3.9922 13.0078C4.88376 13.8994 6.01967 14.5065 7.2563 14.7525C8.49293 14.9985 9.77473 14.8722 10.9396 14.3897C12.1045 13.9072 13.1001 13.0901 13.8006 12.0418C14.5011 10.9934 14.875 9.76086 14.875 8.5C14.875 6.80925 14.2034 5.18774 13.0078 3.9922C11.8123 2.79665 10.1908 2.125 8.5 2.125Z" fill="#343536"/>
+                                <path d="M10.9384 11.6875L7.96875 8.71781V3.71875H9.03125V8.27688L11.6875 10.9384L10.9384 11.6875Z" fill="#A78B73"/>
+                            </svg>
+                            <p class="text-neutral-700">Срок от 2 недель</p>
+                        </div>
+                        <p class="text-[#776E6E]">2330₽ / сотка</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col justify-start items-start mt-6 ml-4 gap-y-4 text-neutral-700">
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Ситуационный (обмерный план)</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Генеральный план</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>План покрытий</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Разбивочный план</p>
+                    </div>
+                    <a href="" class="hover:cursor-pointer text-[10px] border-b border-[#776E6E] border-opacity-45 font-extralight text-[#776E6E]">
+                        ПОДРОБНЕЕ
+                    </a>
+                    <button class="text-[12px] py-2 px-4 border border-neutral-700 hover:bg-neutral-700 hover:text-white duration-300 ease-in-out">
+                        ЗАКАЗАТЬ ДИЗАЙН
+                    </button>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="hidden md:inline-block rounded-[40px] mt-10 bg-[#E2E2E2] w-full h-[380px] py-10 md:row-start-4 md:justify-self-center">
+                <div class="flex flex-row justify-between items-center ml-4">
+                    <h3 class="rounded-full border py-1 px-3 border-[#776E6E]">СТАНДАРТ</h3>
+                    <div class="flex flex-col items-end mr-3">
+                        <div class="flex flex-row justify-between gap-x-2 items-center">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 15.9375C7.02901 15.9375 5.59104 15.5013 4.36795 14.6841C3.14486 13.8668 2.19158 12.7052 1.62865 11.3462C1.06572 9.98719 0.918435 8.49175 1.20541 7.04902C1.49239 5.60629 2.20074 4.28105 3.2409 3.2409C4.28105 2.20074 5.60629 1.49239 7.04902 1.20541C8.49175 0.918435 9.98719 1.06572 11.3462 1.62865C12.7052 2.19158 13.8668 3.14486 14.6841 4.36795C15.5013 5.59104 15.9375 7.02901 15.9375 8.5C15.9375 10.4726 15.1539 12.3643 13.7591 13.7591C12.3643 15.1539 10.4726 15.9375 8.5 15.9375ZM8.5 2.125C7.23915 2.125 6.00661 2.49889 4.95824 3.19938C3.90988 3.89988 3.09278 4.89552 2.61027 6.0604C2.12776 7.22528 2.00152 8.50707 2.2475 9.7437C2.49348 10.9803 3.10064 12.1162 3.9922 13.0078C4.88376 13.8994 6.01967 14.5065 7.2563 14.7525C8.49293 14.9985 9.77473 14.8722 10.9396 14.3897C12.1045 13.9072 13.1001 13.0901 13.8006 12.0418C14.5011 10.9934 14.875 9.76086 14.875 8.5C14.875 6.80925 14.2034 5.18774 13.0078 3.9922C11.8123 2.79665 10.1908 2.125 8.5 2.125Z" fill="#343536"/>
+                                <path d="M10.9384 11.6875L7.96875 8.71781V3.71875H9.03125V8.27688L11.6875 10.9384L10.9384 11.6875Z" fill="#A78B73"/>
+                            </svg>
+                            <p class="text-neutral-700">Срок от 2 недель</p>
+                        </div>
+                        <p class="text-[#776E6E]">2330₽ / сотка</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col justify-start items-start mt-6 ml-4 gap-y-4 text-neutral-700">
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Ситуационный (обмерный план)</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Генеральный план</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>План покрытий</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Разбивочный план</p>
+                    </div>
+                    <a href="" class="hover:cursor-pointer text-[10px] border-b border-[#776E6E] border-opacity-45 font-extralight text-[#776E6E]">
+                        ПОДРОБНЕЕ
+                    </a>
+                    <button class="text-[12px] py-2 px-4 border border-neutral-700 hover:bg-neutral-700 hover:text-white duration-300 ease-in-out">
+                        ЗАКАЗАТЬ ДИЗАЙН
+                    </button>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="hidden md:inline-block rounded-[40px] mt-10 bg-[#CCCCCC] w-full h-[380px] py-10 md:row-start-5 md:justify-self-center">
+                <div class="flex flex-row justify-between items-center ml-4">
+                    <h3 class="rounded-full border py-1 px-3 border-[#776E6E]">БИЗНЕС</h3>
+                    <div class="flex flex-col items-end mr-3">
+                        <div class="flex flex-row justify-between gap-x-2 items-center">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 15.9375C7.02901 15.9375 5.59104 15.5013 4.36795 14.6841C3.14486 13.8668 2.19158 12.7052 1.62865 11.3462C1.06572 9.98719 0.918435 8.49175 1.20541 7.04902C1.49239 5.60629 2.20074 4.28105 3.2409 3.2409C4.28105 2.20074 5.60629 1.49239 7.04902 1.20541C8.49175 0.918435 9.98719 1.06572 11.3462 1.62865C12.7052 2.19158 13.8668 3.14486 14.6841 4.36795C15.5013 5.59104 15.9375 7.02901 15.9375 8.5C15.9375 10.4726 15.1539 12.3643 13.7591 13.7591C12.3643 15.1539 10.4726 15.9375 8.5 15.9375ZM8.5 2.125C7.23915 2.125 6.00661 2.49889 4.95824 3.19938C3.90988 3.89988 3.09278 4.89552 2.61027 6.0604C2.12776 7.22528 2.00152 8.50707 2.2475 9.7437C2.49348 10.9803 3.10064 12.1162 3.9922 13.0078C4.88376 13.8994 6.01967 14.5065 7.2563 14.7525C8.49293 14.9985 9.77473 14.8722 10.9396 14.3897C12.1045 13.9072 13.1001 13.0901 13.8006 12.0418C14.5011 10.9934 14.875 9.76086 14.875 8.5C14.875 6.80925 14.2034 5.18774 13.0078 3.9922C11.8123 2.79665 10.1908 2.125 8.5 2.125Z" fill="#343536"/>
+                                <path d="M10.9384 11.6875L7.96875 8.71781V3.71875H9.03125V8.27688L11.6875 10.9384L10.9384 11.6875Z" fill="#A78B73"/>
+                            </svg>
+                            <p class="text-neutral-700">Срок от 2 недель</p>
+                        </div>
+                        <p class="text-[#776E6E]">2330₽ / сотка</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col justify-start items-start mt-6 ml-4 gap-y-4 text-neutral-700">
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Ситуационный (обмерный план)</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Генеральный план</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>План покрытий</p>
+                    </div>
+    
+                    <div class="flex flex-row justify-start">
+                        <svg class="w-6 mr-2" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.5" y="6.5" width="27" height="27" stroke="#A78B73"/>
+                            <path d="M9 13.8529L19.102 24L42 1" stroke="#343536" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="0.5" y1="27.5" x2="23.5" y2="27.5" stroke="#343536" stroke-linecap="round"/>
+                        </svg>
+                        <p>Разбивочный план</p>
+                    </div>
+                    <a href="" class="hover:cursor-pointer text-[10px] border-b border-[#776E6E] border-opacity-45 font-extralight text-[#776E6E]">
+                        ПОДРОБНЕЕ
+                    </a>
+                    <button class="text-[12px] py-2 px-4 border border-neutral-700 hover:bg-neutral-700 hover:text-white duration-300 ease-in-out">
+                        ЗАКАЗАТЬ ДИЗАЙН
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:mt-[370px] mt-10">
+            <p class="text-[24px] font-light">НАШЕ ПОРТФОЛИО</p>
+            <img src="../../public/img/house1.png" class="flex mx-auto my-8">
+            <button class="md:mt-10 mb-10 float-end text-[12px] md:text-[24px] py-2 md:py-3 px-4 md:px-8 border border-neutral-700 hover:bg-neutral-700 hover:text-white duration-300 ease-in-out">
+                ВСЕ ПРОЕКТЫ
+            </button>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
